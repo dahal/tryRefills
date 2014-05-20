@@ -16,6 +16,13 @@ gem 'neat'
 
 ```
 
+####Bundle install
+
+```
+~> bundle install
+
+```
+
 ####application.css.scss
 *Updated with*
 
@@ -24,6 +31,9 @@ gem 'neat'
 @import "bitters/bitters";
 @import "neat/neat";
 @import "refills/cards";
+@import "refills/footer";
+@import "refills/hero";
+@import "refills/navigation";
 
 ```
 
@@ -31,17 +41,16 @@ gem 'neat'
 *Within app/assets/stylesheets*
 
 ```
-~> rails g bourbon install
-Could not find generator bourbon.
- 
-~> rails g bourbon install
-Could not find generator bourbon.
- 
-~> rails g bitters install
-Could not find generator bitters.
-
-~> rails g neat install
-Could not find generator neat.
-
+~> bourbon install
+~> bitters install
+~> neat install
+~> rails g refills:import navigation
+~> rails g refills:import hero
+~> rails g refills:import cards
+~> rails g refills:import footer
 
 ```
+
+####Error:-
+
+![Error](app/assets/images/error.png)
