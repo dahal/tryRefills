@@ -51,6 +51,13 @@ gem 'neat'
 
 ```
 
-####Error:-
+#### Grid_setting
+*Enable grid settings in bitters (app/assets/stylesheets/bitters/_bitters.scss)*
+```
 
-![Error](app/assets/images/error.png)
+
+```
+
+####Awesome:-
+
+![Works Great](app/assets/images/tryrefills.png)
